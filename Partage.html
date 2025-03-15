@@ -10,7 +10,7 @@
         body {
             background-color: #f5f5f5; /* Colore di sfondo chiaro */
             color: var(--text-color);
-            font-family: 'Roboto', Arial, sans-serif; /* Usa un font simile */
+            font-family: 'Roboto', Arial, sans-serif; /* Utilizzare un carattere simile */
             padding: 20px;
             margin: 0;
         }
@@ -25,9 +25,9 @@
             font-family: 'Billabong', cursive;
             color: #007BFF; /* Colore blu */
             border: 1.5px solid #007BFF; /* Bordo blu */
-            padding: 5px 10px;
+            padding: 4px;
             display: inline-block;
-            border-radius: 10px; /* Bordo arrotondato */
+            border-radius: 12px; /* Angoli arrotondati */
         }
         .divider {
             height: 1px;
@@ -63,13 +63,13 @@
             color: #007BFF; /* Colore blu */
             transition: color 0.3s;
             border: 1px solid #007BFF; /* Bordo blu */
-            border-radius: 3px;
+            border-radius: 10px;
             padding: 8px; 
             background-color: rgba(0, 119, 190, 0.1); /* Sfondo chiaro */
             display: inline-block;
         }
         .icon:hover {
-            color: #005f8d; /* Colore al passaggio del mouse */
+            color: #005f8d; /* Colore al passaggio */
             background-color: rgba(0, 119, 190, 0.2);
         }
         .or-divider {
@@ -95,9 +95,10 @@
         }
         .copy-button {
             margin-top: 10px;
-            padding: 10px 20px;
+            padding: 10px 17px;
             border: 1px solid #007BFF; /* Bordo blu */
-            background-color: transparent;
+            border-radius: 13px;
+            background-color: rgba(0, 119, 190, 0.1); /* Sfondo chiaro */
             color: #007BFF; /* Colore blu */
             cursor: pointer;
             font-size: 16px;
@@ -111,12 +112,7 @@
             margin-top: 10px;
             color: #007BFF; /* Colore blu */
         }
-        .copyright {
-            margin-top: 40px;
-            color: darkgray;
-            font-size: 0.8em;
-            text-align: center;
-        }
+        
     </style>
 </head>
 <body>
@@ -129,18 +125,18 @@
     <div class="divider"></div>
 
     <div class="content">
-        <h1>Condividi GZ</h1>
+        <h1>Condividi G-Z</h1>
         <div class="short-divider"></div>
-        <p class="social-message">Scopriamo chi siamo e come apparteniamo al mondo! Oltre all'intrattenimento, impariamo di più sulle nostre generazioni:</p>
+        <p class="social-message">Scopriamo chi siamo e come apparteniamo al mondo! Oltre al divertimento, impariamo di più sulle nostre generazioni:</p>
 
         <div class="social-icons">
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?text=Unisciti%20a%20G-Z%20!%20Insieme,%20scopriamo%20i%20fascinosi%20segreti%20della%20nostra%20generazione,%20tra%20scoperte%20emozionanti%20e%20momenti%20di%20intrattenimento.%20Fai%20parte%20di%20questa%20avventura%20unica!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+            <a href="https://api.whatsapp.com/send?text=Unisciti%20a%20G-Z%20!%20Insieme,%20scopriamo%20i%20fascinosi%20segreti%20della%20nostra%20generazione,%20tra%20scoperte%20eccitanti%20e%20momenti%20di%20divertimento.%20Fai%20parte%20di%20questa%20unica%20avventura!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=Unisciti%20a%20G-Z%20!%20Insieme,%20scopriamo%20i%20fascinosi%20segreti%20della%20nostra%20generazione,%20tra%20scoperte%20emozionanti%20e%20momenti%20di%20intrattenimento.%20Fai%20parte%20di%20questa%20avventura%20unica!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=Unisciti%20a%20G-Z%20!%20Insieme,%20scopriamo%20i%20fascinosi%20segreti%20della%20nostra%20generazione,%20tra%20scoperte%20eccitanti%20e%20momenti%20di%20divertimento.%20Fai%20parte%20di%20questa%20unica%20avventura!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
                 <i class="fab fa-telegram"></i>
             </a>
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
@@ -155,25 +151,22 @@
             <span style="color: #007BFF;">Oppure</span> <!-- Colore blu -->
         </div>
 
-        <p class="copy-message">Copia il link per condividere:</p>
+        <p class="copy-message">Copia il link di condivisione:</p>
         <button class="copy-button" onclick="copyLink()">Copia</button>
         <p class="copy-status" id="copyStatus"></p>
     </div>
 
-    <div class="copyright">
-        &copy; 2025 <span translate="no">G-Z</span>. Tutti i diritti riservati.
-    </div>
-
+    
     <script>
-        const shareText = "Unisciti a G-Z! Insieme, scopriamo i fascinosi segreti della nostra generazione, tra scoperte emozionanti e momenti di intrattenimento. Fai parte di questa avventura unica! 🌟";
+        const shareText = "Unisciti a G-Z ! Insieme, scopriamo i fascinosi segreti della nostra generazione, tra scoperte eccitanti e momenti di divertimento. Fai parte di questa unica avventura! 🌟";
         const shareLink = "https://www.g-z.online";
 
         function copyLink() {
             navigator.clipboard.writeText(shareLink).then(() => {
-                document.getElementById("copyStatus").innerText = "Il seguente link di condivisione è stato copiato negli appunti: " + shareLink;
+                document.getElementById("copyStatus").innerText = "Il link di condivisione è stato copiato negli appunti: " + shareLink;
             }).catch(err => {
-                console.error("Errore nella copia del testo: ", err);
-                document.getElementById("copyStatus").innerText = "Errore nella copia del testo.";
+                console.error("Errore durante la copia del testo: ", err);
+                document.getElementById("copyStatus").innerText = "Errore durante la copia del testo.";
             });
         }
 
@@ -184,7 +177,7 @@
                     url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}&quote=${encodeURIComponent(shareText)}`;
                     break;
                 case 'WeChat':
-                    alert("La condivisione su WeChat si effettua solitamente tramite l'app.");
+                    alert("La condivisione su WeChat avviene generalmente tramite l'app.");
                     return;
                 case 'Twitter':
                     url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
